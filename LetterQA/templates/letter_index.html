@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Upload a Letters csv file.</p>
+
+<form enctype="multipart/form-data" action="/LetterQA/QA_file" method="post">
+
+  {% csrf_token %}
+  <input type="file" id="myLetterFile" name="letter_file">
+  <input type="submit">
+</form>
+
+</body>
+</html>

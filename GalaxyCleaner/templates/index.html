@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Upload a Galaxy NB file.</p>
+
+<form enctype="multipart/form-data" action="/GalaxyCleaner/process_file/" method="post">
+
+  {% csrf_token %}
+  <input type="file" id="myFile" name="galaxy_filename">
+  <input type="submit">
+</form>
+
+</body>
+</html>
