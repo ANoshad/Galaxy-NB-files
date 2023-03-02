@@ -1382,7 +1382,7 @@ def process_file(request):
     final_dataframe['SSN'] = final_dataframe['SSN'].str.replace('.0', '')
     final_dataframe['SSN'] = final_dataframe['SSN'].fillna("")
     final_dataframe['SSN'] = final_dataframe['SSN'].str.replace('nan','')
-    # Remove any NaN
+    # Remove any NaN Quikc brown fox
     final_dataframe = final_dataframe.drop(['ACTNumber'], axis=1)
     final_dataframe = final_dataframe.fillna("")
 
